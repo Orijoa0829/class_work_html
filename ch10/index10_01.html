@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <style>
+         /* 자손 선택자(하위 선택자)  */
+        h1 p {color: green;}
+
+        /* 인접 형제 선택자( + ) */
+        h1 + p {color: red;}
+
+        /* 일반 형제 선택자( ~ ) */
+        h1 ~ p {color: blue;}
+     </style>
+</head>
+<body>
+    <p>가나다라마바사</p>    
+    <h1>여기는 h1 태그</h1>
+    <p>가나다라마바</p>
+    <p>가나다라마바</p>
+    <p>가나다라마바</p>
+    <div>
+        <p>123456</p>
+
+    </div>
+
+</body>
+</html>
