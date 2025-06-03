@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title></title>
+    <style></style>
+    <style>
+      /* 교차축 방향에 대한 정렬 기법 */
+
+    
+      .container {
+        display: flex;
+        flex-direction: row;
+        /* 교차축(세로) 방향 정렬 기법
+          tip : 주축 방향은 기본적으로 화면에 긑까지 차지할 수 있는 영역이 자동으로 생긴다.
+        */
+        align-items: end;
+        height: 400px;
+        justify-content: space-evenly;
+        border: 1px solid #911211;
+        padding: 10px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 5px;
+        text-align: start;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+  </body>
+</html>

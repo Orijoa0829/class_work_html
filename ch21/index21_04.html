@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* flex-flow 속성을 사용해보자 */
+    .container {
+      display: flex;
+      border: 2px solid;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(71, 172, 255);
+      margin: 5px;
+      border: 2px solid black;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .item{
+        flex-shrink: 1;
+    }
+    .item2{
+        flex-shrink: 2;
+    }
+    /* flex-shrink 속성은 화면에 크기가 작아질 때 축소하는 비율을 의미한다.
+    즉 , 공간이 부족할 때 얼마나 flex item들이 축소 될지 결정하는 속성이다
+    기본값은 1이고, 숫자가 클*/
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item time1">2</div>
+      <div class="item time1">2</div>
+      <div class="item time2">2</div>
+      <div class="item time2">2</div>
+      <div class="item time2">2</div>
+    </div>
+  </body>
+</html>
